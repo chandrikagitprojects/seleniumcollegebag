@@ -10,14 +10,14 @@ import org.openqa.selenium.support.ui.Select;
 public class seleniumtest {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\webdrivers\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\webdrivers\\geckodriver.exe");
 		
 
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\webdrivers\\chromedriver.exe");
-		//WebDriver d=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\webdrivers\\chromedriver.exe");
+		WebDriver d=new ChromeDriver();
 		
 		
-		WebDriver d=new FirefoxDriver();
+		//WebDriver d=new FirefoxDriver();
 		d.get("https://hrlabs-at.web.app/");
 		d.manage().window().maximize();
 		
